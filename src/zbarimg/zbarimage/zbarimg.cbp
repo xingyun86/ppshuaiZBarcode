@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="zbarimg" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/zbarimg" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/zbarimg" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-D_WIN32_WINNT=0x0502" />
+			<Add directory="libz-mingw32/include" />
+			<Add directory="libtiff-mingw32/include" />
+			<Add directory="libpng-mingw32/include" />
+			<Add directory="libzbar-mingw32/include" />
+			<Add directory="libfftw-mingw32/include" />
+			<Add directory="libjpeg-mingw32/include" />
+			<Add directory="libiconv-mingw32/include" />
+			<Add directory="libzbar-mingw32/include/zbar" />
+			<Add directory="libimagemagick-mingw32/include/ImageMagick-7" />
+		</Compiler>
+		<Linker>
+			<Add library="ZBAR" />
+			<Add library="MagickWand" />
+			<Add library="MagickCore" />
+			<Add library="GDI32" />
+			<Add library="ICONV" />
+			<Add library="VFW32" />
+			<Add library="WINMM" />
+			<Add library="WS2_32" />
+			<Add library="KERNEL32" />
+			<Add library="JPEG" />
+			<Add library="FFTW3" />
+			<Add library="PNG" />
+			<Add library="PNG16" />
+			<Add library="TIFF" />
+			<Add library="Z" />
+			<Add directory="libz-mingw32/lib" />
+			<Add directory="libtiff-mingw32/lib" />
+			<Add directory="libpng-mingw32/lib" />
+			<Add directory="libzbar-mingw32/lib" />
+			<Add directory="libfftw-mingw32/lib" />
+			<Add directory="libjpeg-mingw32/lib" />
+			<Add directory="libiconv-mingw32/lib" />
+			<Add directory="libimagemagick-mingw32/lib" />
+		</Linker>
+		<Unit filename="zbarimg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
