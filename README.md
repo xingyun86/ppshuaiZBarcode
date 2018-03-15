@@ -1,0 +1,2 @@
+# ppshuaiZBarcode
+一个静态编译的mingw版本的zbarcode
